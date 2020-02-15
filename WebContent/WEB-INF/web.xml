@@ -12,6 +12,18 @@
 	    <error-code>403</error-code>
 	    <location>/faces/forbidden.xhtml</location>
 	</error-page>
+	
+	<error-page>
+		<!-- Internal error -->
+        <error-code>500</error-code>
+        <location>/faces/error.xhtml</location>
+    </error-page>
+    
+	<error-page>
+		<!-- Resource not found -->
+        <error-code>404</error-code>
+        <location>/faces/notfound.xhtml</location>
+    </error-page>
   
 	<welcome-file-list>
 		<welcome-file>/faces/index.xhtml</welcome-file>
