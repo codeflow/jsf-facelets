@@ -10,7 +10,7 @@
 	<error-page>
 	    <!-- Forbidden directory listing -->
 	    <error-code>403</error-code>
-	    <location>/faces/error/forbidden.xhtml</location>
+	    <location>/faces/forbidden.xhtml</location>
 	</error-page>
   
 	<welcome-file-list>
@@ -159,8 +159,8 @@
 	    <display-name>Restrict XHTML documents</display-name>
 	    <web-resource-collection>
 	        <web-resource-name>XHTML</web-resource-name>
-	        <url-pattern>/restrict/*</url-pattern>
-	        <url-pattern>/faces/restrict/*</url-pattern>
+	        <url-pattern>/restrict.xhtml</url-pattern>
+	        <url-pattern>/faces/restrict.xhtml</url-pattern>
 	    </web-resource-collection>
 	    <auth-constraint>
 	        <description>Only for admin group</description>
