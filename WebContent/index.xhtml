@@ -52,6 +52,23 @@
 		  		<h:outputLabel value="#{helloBean.project}" />
 		  	</p>
 		  	
+			<div class="alert alert-info alert-dismissible fade show" role="alert">
+				<h:outputLabel value="Facelets allows you to convert a tag from an XHTML document to another tag using the “jsfc” attribute. Using this attribute makes it possible to create JSF pages using basically HTML tags. During the build process Facelets performs the transformation of an HTML tag into an HTML JSF tag to instantiate the component of the object tree in the page." />
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  					<span aria-hidden="true">
+  						<h:outputText value="x" />
+  					</span>
+				</button>
+			</div>
+			
+			<h:panelGrid columns="2">
+				<h:outputText value="Basic Input Text field:" />
+				<input type="text" jsfc="h:inputText" value="#{helloBean.users[0].name}" />
+			</h:panelGrid>
+		  	
+		  	<br />
+		  	<br />
+		  	
 			<table class="table">
 				<caption>List of users</caption>
 				<thead>
