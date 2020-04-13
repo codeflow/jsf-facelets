@@ -1,0 +1,84 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+		 					 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.github.codeflow</groupId>
+	<artifactId>jsf-facelets</artifactId>
+	<version>1.0.0</version>
+	<packaging>war</packaging>
+	
+	<dependencies>
+		<dependency>
+		    <groupId>commons-beanutils</groupId>
+		    <artifactId>commons-beanutils</artifactId>
+		    <version>1.7.0</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>commons-codec</groupId>
+		    <artifactId>commons-codec</artifactId>
+		    <version>1.3</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>commons-collections</groupId>
+		    <artifactId>commons-collections</artifactId>
+		    <version>3.2</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>commons-digester</groupId>
+		    <artifactId>commons-digester</artifactId>
+		    <version>1.8</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>commons-discovery</groupId>
+		    <artifactId>commons-discovery</artifactId>
+		    <version>0.4</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>commons-logging</groupId>
+		    <artifactId>commons-logging</artifactId>
+		    <version>1.1.1</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.sun.facelets</groupId>
+		    <artifactId>jsf-facelets</artifactId>
+		    <version>1.1.14</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>jstl</artifactId>
+		    <version>1.2</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>javax.servlet.jsp.jstl</groupId>
+		    <artifactId>jstl-api</artifactId>
+		    <version>1.2</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.glassfish.web</groupId>
+		    <artifactId>jstl-impl</artifactId>
+		    <version>1.2</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.apache.myfaces.core</groupId>
+		    <artifactId>myfaces-api</artifactId>
+		    <version>1.2.9</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.apache.myfaces.core</groupId>
+		    <artifactId>myfaces-impl</artifactId>
+		    <version>1.2.9</version>
+		</dependency>
+	</dependencies>
+</project>

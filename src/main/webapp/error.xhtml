@@ -1,0 +1,19 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:c="http://java.sun.com/jstl/core"
+                template="/WEB-INF/template/layout.xhtml">
+    <ui:param name="homeButton" value="Home" />
+	<ui:define name="content">
+		<ui:debug hotkey="x" rendered="#{initParam.debugMode}" />
+		<div class="application-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+			<div class="alert alert-info alert-dismissible fade show" role="alert">
+				<strong>
+					<h:outputLabel value="Error 500" />
+				</strong>
+				<h:outputLabel value="There was an internal error!" />
+			</div>
+		</div>
+	</ui:define>
+</ui:composition>
