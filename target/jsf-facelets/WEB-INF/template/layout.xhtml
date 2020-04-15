@@ -37,7 +37,9 @@
     <body>
     	<f:view>
         	<ui:include src="./menu.xhtml" />
-        	<ui:insert name="content"/>        
+        	<h:form>
+        		<ui:insert name="content"/> 
+        	</h:form>     
         	<ui:include src="./footer.xhtml" />
     	</f:view>
     	<script src="../resources/js/jquery-3.4.1.slim.min.js" />		

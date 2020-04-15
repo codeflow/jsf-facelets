@@ -1,7 +1,11 @@
 package br.com.codeflow.model;
 
-public class UserModel {
+import java.io.Serializable;
+
+public class UserModel implements Serializable {
 	
+	private static final long serialVersionUID = 1L;
+
 	private Long id;
 	
 	private String login;

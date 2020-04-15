@@ -1,103 +1,105 @@
-<ui:composition xmlns="http://www.w3.org/1999/xhtml"
-                xmlns:h="http://java.sun.com/jsf/html"
-                xmlns:f="http://java.sun.com/jsf/core"
-                xmlns:ui="http://java.sun.com/jsf/facelets"
-                xmlns:c="http://java.sun.com/jstl/core"
-                template="/jsf-facelets/WEB-INF/template/layout.xhtml">
-    <ui:param name="homeButton" value="Home" />
-	<ui:define name="content">
-		<ui:remove>
-			<h:outputLabel value="This tag will not be renderized" />
-		</ui:remove>
-		<ui:debug hotkey="x" rendered="#{initParam.debugMode}" />
-		<div class="application-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-			<ui:include src="/jsf-facelets/WEB-INF/component/alert.xhtml" />
-			<c:if test="#{helloBean.test}">
-				<div class="alert alert-warning alert-dismissible fade show" role="alert">
-					<h:outputLabel value="Using c:if JSTL tag for component rendering" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jstl/core">
+	<ui:composition template="/WEB-INF/template/layout.xhtml">
+	    <ui:param name="homeButton" value="Home" />
+		<ui:define name="content">
+			<ui:remove>
+				<h:outputLabel value="This tag will not be renderized" />
+			</ui:remove>
+			<ui:debug hotkey="x" rendered="#{initParam.debugMode}" />
+			<div class="application-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+				<ui:include src="/WEB-INF/component/alert.xhtml" />
+				<c:if test="#{helloBean.test}">
+					<div class="alert alert-warning alert-dismissible fade show" role="alert">
+						<h:outputLabel value="Using c:if JSTL tag for component rendering" />
+						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+	   						<span aria-hidden="true">
+	   							<h:outputText value="x" />
+	   						</span>
+	 						</button>
+					</div>
+				</c:if>
+				
+				<c:choose>
+					<c:when test = "#{!helloBean.test}">
+						<div class="alert alert-primary alert-dismissible fade show" role="alert">
+							<h:outputLabel value="Using c:choose and c:when JSTL tags for component rendering" />
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+	    						<span aria-hidden="true">
+	    							<h:outputText value="x" />
+	    						</span>
+	  						</button>
+						</div>
+					</c:when>
+					<c:otherwise>
+						<div class="alert alert-info alert-dismissible fade show" role="alert">
+							<h:outputLabel value="Using c:choose and c:otherwise JSTL tags for component rendering" />
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+	    						<span aria-hidden="true">
+	    							<h:outputText value="x" />
+	    						</span>
+	  						</button>
+						</div>
+					</c:otherwise>
+				</c:choose>
+				<h1 class="display-4">
+			  		<h:outputText value="Welcome" />
+			  	</h1>
+			  	<p class="lead">
+			  		<h:outputLabel value="#{helloBean.project}" />
+			  	</p>
+			  	
+				<div class="alert alert-info alert-dismissible fade show" role="alert">
+					<h:outputLabel value="Facelets allows you to convert a tag from an XHTML document to another tag using the “jsfc” attribute. Using this attribute makes it possible to create JSF pages using basically HTML tags. During the build process Facelets performs the transformation of an HTML tag into an HTML JSF tag to instantiate the component of the object tree in the page." />
 					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-   						<span aria-hidden="true">
-   							<h:outputText value="x" />
-   						</span>
- 						</button>
+	  					<span aria-hidden="true">
+	  						<h:outputText value="x" />
+	  					</span>
+					</button>
 				</div>
-			</c:if>
-			
-			<c:choose>
-				<c:when test = "#{!helloBean.test}">
-					<div class="alert alert-primary alert-dismissible fade show" role="alert">
-						<h:outputLabel value="Using c:choose and c:when JSTL tags for component rendering" />
-						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    						<span aria-hidden="true">
-    							<h:outputText value="x" />
-    						</span>
-  						</button>
-					</div>
-				</c:when>
-				<c:otherwise>
-					<div class="alert alert-info alert-dismissible fade show" role="alert">
-						<h:outputLabel value="Using c:choose and c:otherwise JSTL tags for component rendering" />
-						<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    						<span aria-hidden="true">
-    							<h:outputText value="x" />
-    						</span>
-  						</button>
-					</div>
-				</c:otherwise>
-			</c:choose>
-			<h1 class="display-4">
-		  		<h:outputText value="Welcome" />
-		  	</h1>
-		  	<p class="lead">
-		  		<h:outputLabel value="#{helloBean.project}" />
-		  	</p>
-		  	
-			<div class="alert alert-info alert-dismissible fade show" role="alert">
-				<h:outputLabel value="Facelets allows you to convert a tag from an XHTML document to another tag using the “jsfc” attribute. Using this attribute makes it possible to create JSF pages using basically HTML tags. During the build process Facelets performs the transformation of an HTML tag into an HTML JSF tag to instantiate the component of the object tree in the page." />
-				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-  					<span aria-hidden="true">
-  						<h:outputText value="x" />
-  					</span>
-				</button>
+				
+				<h:panelGrid columns="2">
+					<h:outputText value="Basic Input Text field:" />
+					<input type="text" jsfc="h:inputText" value="#{helloBean.users[0].name}" />
+				</h:panelGrid>
+			  	
+			  	<br />
+			  	<br />
+			  	
+				<table class="table">
+					<caption>List of users</caption>
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Login</th>
+							<th scope="col">Name</th>
+							<th scope="col">Mail</th>
+						</tr>
+					</thead>
+					<tbody>
+						<ui:repeat value="#{helloBean.users}" var="user">
+						<tr>
+							<th scope="row">
+								<h:outputLabel value="#{user.id}" />
+							</th>
+							<td>
+								<h:outputLabel value="#{user.login}" />
+							</td>
+							<td>
+								<h:outputLabel value="#{user.name}" />
+							</td>
+							<td>
+								<h:outputLabel value="#{user.mail}" />
+							</td>
+						</tr>
+						</ui:repeat>
+					</tbody>
+				</table>
 			</div>
-			
-			<h:panelGrid columns="2">
-				<h:outputText value="Basic Input Text field:" />
-				<input type="text" jsfc="h:inputText" value="#{helloBean.users[0].name}" />
-			</h:panelGrid>
-		  	
-		  	<br />
-		  	<br />
-		  	
-			<table class="table">
-				<caption>List of users</caption>
-				<thead>
-					<tr>
-						<th scope="col">#</th>
-						<th scope="col">Login</th>
-						<th scope="col">Name</th>
-						<th scope="col">Mail</th>
-					</tr>
-				</thead>
-				<tbody>
-					<ui:repeat value="#{helloBean.users}" var="user">
-					<tr>
-						<th scope="row">
-							<h:outputLabel value="#{user.id}" />
-						</th>
-						<td>
-							<h:outputLabel value="#{user.login}" />
-						</td>
-						<td>
-							<h:outputLabel value="#{user.name}" />
-						</td>
-						<td>
-							<h:outputLabel value="#{user.mail}" />
-						</td>
-					</tr>
-					</ui:repeat>
-				</tbody>
-			</table>
-		</div>
-	</ui:define>
-</ui:composition>
+		</ui:define>
+	</ui:composition>
+</html>

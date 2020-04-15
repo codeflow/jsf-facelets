@@ -1,13 +1,21 @@
 package br.com.codeflow.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
-public class HelloModel {
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
+
+@ManagedBean(name = "helloBean")
+@RequestScoped
+public class HelloModel implements Serializable {
 	
+	private static final long serialVersionUID = 1L;
+
 	private boolean test;
 	
 	private String project;
