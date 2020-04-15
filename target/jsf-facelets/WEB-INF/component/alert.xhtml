@@ -1,0 +1,21 @@
+ <ui:component id="alert" xmlns="http://www.w3.org/1999/xhtml"
+    			xmlns:f="http://java.sun.com/jsf/core"
+    			xmlns:h="http://java.sun.com/jsf/html"
+    			xmlns:ui="http://java.sun.com/jsf/facelets">
+    
+	<div class="alert alert-warning alert-dismissible fade show" role="alert">
+		<h:outputLabel value="The ui:component tag has exactly the same behavior 
+							  as the ui:composition tag, except that this tag will 
+							  add a new instance of UIComponent, for each fragment 
+							  contained in this tag. This tag has the attributes id 
+							  (unique identifier for the generated UIComponent) 
+							  and binding (allows storing the generated component 
+							  in a property of a managed bean configured via EL." />
+							  
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">
+				<h:outputText value="x" />
+			</span>
+		</button>
+	</div>
+</ui:component>
