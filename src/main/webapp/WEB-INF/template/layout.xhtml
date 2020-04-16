@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+    <head>
+        <f:facet name="first">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+         	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	    	<meta name="description" content="codeflow.com.br" />
+	    	<meta name="author" content="@Codeflow" />
+	    	<meta name="generator" content="Jekyll v3.8.6" />
+	    	<meta name="theme-color" content="#563d7c" />
+        </f:facet>
+        
+        <title>Codeflow - Basic JSF</title>
+        
+        <link href="../resources/css/bootstrap.min.css"  
+			  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+			  rel="stylesheet" crossorigin="anonymous" />
+			  
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" href="../resources/img/codeflow-icon.png" />
+		<link rel="icon" href="../resources/img/codeflow-icon.png" type="image/png" />
+	
+		<link href="../resources/css/application.css" rel="stylesheet" />
+		
+	    <!-- Custom styles for this template -->
+	    <link href="../resources/css/sticky-footer-navbar.css" rel="stylesheet" />
+        
+        <ui:insert name="head"/>
+    </head>
+
+    <body>
+    	<f:view>
+        	<ui:include src="./menu.xhtml" />
+        	<h:form>
+        		<ui:insert name="content"/> 
+        	</h:form>     
+        	<ui:include src="./footer.xhtml" />
+    	</f:view>
+    	<script src="../resources/js/jquery-3.4.1.slim.min.js" />		
+    	<script src="../resources/js/bootstrap.bundle.js" />
+    	<script src="../resources/js/bootstrap.bundle.min.js" />
+    	<script src="../resources/js/bootstrap.js" />
+    	<script src="../resources/js/bootstrap.min.js" />
+    </body>
+
+</html>
