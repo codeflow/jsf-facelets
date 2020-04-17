@@ -30,6 +30,8 @@ jsf-facelets-2x
 * [jsf-facelets-2x](https://github.com/codeflow/jsf-facelets/tree/jsf-facelets-maven)
 
 	This branch presents the creation of a JSF 2x project with Facelets.
+	
+The [master](https://github.com/codeflow/jsf-facelets/tree/master) and [developer](https://github.com/codeflow/jsf-facelets/tree/develop) branchs are synchronized with the [jsf-facelets-maven](https://github.com/codeflow/jsf-facelets/tree/jsf-facelets-maven) branch
 
 ### Prerequisites
 
