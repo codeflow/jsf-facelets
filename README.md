@@ -38,6 +38,7 @@ To execute the projects hosted in this repository, the following technologies wi
 * [JDK 7 or JDK 8](https://openjdk.java.net/install/)
 * [Apache Maven](https://maven.apache.org/download.cgi)
 * [Apache Tomcat 7](https://tomcat.apache.org/download-70.cgi)
+* [Eclipse IDE](https://www.eclipse.org/downloads/)
 
 All required libs used are hosted in the /lib directory available on each branch
 
