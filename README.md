@@ -6,12 +6,10 @@ This repository demonstrates basic features using JSF and Facelets. All the code
 
 This repository has 4 distinct and very important branches:
 
-```
 `basic-jsf`
 `jsf-facelets`
 `jsf-facelets-maven`
 `jsf-facelets-2x`
-```
 
 * [basic-jsf](https://github.com/codeflow/jsf-facelets/tree/basic-jsf)
 
