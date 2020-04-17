@@ -6,12 +6,10 @@ This repository demonstrates basic features using JSF and Facelets. All the code
 
 This repository has 4 distinct and very important branches:
 
-```
-basic-jsf
-jsf-facelets
-jsf-facelets-maven
-jsf-facelets-2x
-```
+`basic-jsf`
+`jsf-facelets`
+`jsf-facelets-maven`
+`jsf-facelets-2x`
 
 * [basic-jsf](https://github.com/codeflow/jsf-facelets/tree/basic-jsf)
 
@@ -20,16 +18,16 @@ jsf-facelets-2x
 	
 * [jsf-facelets](https://github.com/codeflow/jsf-facelets/tree/jsf-facelets)
 	
-	This branch presents the creation of JSF 1x project and configuring Facelets 
+	This branch presents the creation of JSF 1x project and configuring `Facelets` 
 	as the default view technology.
 	
 * [jsf-facelets-maven](https://github.com/codeflow/jsf-facelets/tree/jsf-facelets-maven)
 
-	This branch presents the creation of a JSF 2x project with Facelets using Maven.
+	This branch presents the creation of a JSF 2x project with `Facelets` using `Maven`.
 	
 * [jsf-facelets-2x](https://github.com/codeflow/jsf-facelets/tree/jsf-facelets-maven)
 
-	This branch presents the creation of a JSF 2x project with Facelets.
+	This branch presents the creation of a JSF 2x project with `Facelets`.
 	
 The [master](https://github.com/codeflow/jsf-facelets/tree/master) and [developer](https://github.com/codeflow/jsf-facelets/tree/develop) branchs are synchronized with the [jsf-facelets-maven](https://github.com/codeflow/jsf-facelets/tree/jsf-facelets-maven) branch
 
@@ -42,6 +40,6 @@ To execute the projects hosted in this repository, the following technologies wi
 * [Apache Tomcat 7](https://tomcat.apache.org/download-70.cgi)
 * [Eclipse IDE](https://www.eclipse.org/downloads/)
 
-All required libs used are hosted in the /lib directory available on each branch
+All required libs used are hosted in the `/lib` directory available on each branch
 
 Any questions, don´t hesitate to contact me at [here](mailto:santos.rafaelbs@gmail.com)
