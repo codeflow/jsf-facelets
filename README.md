@@ -7,7 +7,7 @@ This repository demonstrates basic features using JSF and Facelets. All the code
 This repository has 4 distinct and very important branches:
 
 | Branch | Description |
-| ----------------------- | --- |
+| --- | --- |
 | [basic-jsf](https://github.com/codeflow/jsf-facelets/tree/basic-jsf) | This branch presents the creation of basic JSF 1x project using the default  implementation is based on the use of JSP pages. (Facelets is not configured). |
 | [jsf-facelets](https://github.com/codeflow/jsf-facelets/tree/jsf-facelets) | This branch presents the creation of JSF 1x project and configuring **Facelets** as the default view technology. |
 | [jsf-facelets-maven](https://github.com/codeflow/jsf-facelets/tree/jsf-facelets-maven) | This branch presents the creation of a JSF 2x project with **Facelets** using **Maven**. |
